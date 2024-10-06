@@ -1,2 +1,3 @@
 # Evapotraspiration1
-Using Haregreaves - Samani to account for Evapotraspiration
+I uploaded a simple R code to calculate potential evapotranspiration using the Hargreaves-Samani equation. At the end, the expected daily water balance for each day of the year is provided. The code works if the right latitude is provided, so check it if you want to use the code for your latitude. 
+Regarding NDVI, I used the NDVI values that I measured through sentinel 2 for the specific area I'm working on. Then, I calculated Kc through an equation found in the literature (here: Estimating crop water use from remotely sensed NDVI, crop models, and reference ET/ TJ Trout, LF Johnson - USCID Fourth International Conference …, 2007 - mountainscholar.org). As I used a linear equation for calculating kc, the correlation between ndvi e kc is 1. Yet, you can upload your own measured kc and check for correlation through the code. 
